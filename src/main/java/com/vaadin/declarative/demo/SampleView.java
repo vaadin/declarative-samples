@@ -19,13 +19,17 @@ public class SampleView extends HorizontalSplitPanel implements View {
 
 	protected AceEditor editor;
 
+	public SampleView(){
+
+	}
+
 	public SampleView(String templateName){
 		setSecondComponent(createMarkupView(templateName));
 		setSplitPosition(40, Unit.PERCENTAGE);
 		setSizeFull();
 	}
 
-	private Component createMarkupView(String templateName){
+	protected Component createMarkupView(String templateName){
 		editor = new AceEditor();
 		editor.setValue(readFile(templateName));
 		editor.setSizeFull();

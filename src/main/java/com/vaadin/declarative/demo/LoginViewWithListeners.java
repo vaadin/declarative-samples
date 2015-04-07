@@ -1,7 +1,6 @@
 package com.vaadin.declarative.demo;
 
 import com.vaadin.data.validator.EmailValidator;
-import com.vaadin.event.FieldEvents;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Notification;
@@ -20,14 +19,6 @@ public class LoginViewWithListeners extends SampleView{
 		setFirstComponent(loginForm);
 		addValidators();
 		addLoginButtonListener();
-		// let's make the login form editable for demonstration purposes
-		editor.setReadOnly(false);
-		editor.addTextChangeListener(new FieldEvents.TextChangeListener() {
-			@Override
-			public void textChange(FieldEvents.TextChangeEvent textChangeEvent) {
-				updateLoginView();
-			}
-		});
 	}
 
 	private void performLogin() {
@@ -37,17 +28,6 @@ public class LoginViewWithListeners extends SampleView{
 			Notification.show("SUCCESS");
 		} else{
 			Notification.show("Login failed. Try 'demo@vaadin.com / demo'");
-		}
-	}
-
-	protected void updateLoginView() {
-		try{
-			loginForm=new LoginViewLayout(editor.getValue());
-			setFirstComponent(loginForm);
-			addValidators();
-			addLoginButtonListener();
-		} catch(Exception e){
-			e.printStackTrace();
 		}
 	}
 

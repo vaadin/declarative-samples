@@ -37,6 +37,7 @@ public class DeclarativeUI extends UI {
         setNavigator(new Navigator(this, viewArea));
         // add views
         addView("Start", DemoView.class);
+        addView("Basics", EditableView.class);
         addView("LoginForm", LoginViewWithListeners.class);
         addView("Options", OptionGroupView.class);
         addView("Grid", GridSampleView.class);
