@@ -22,6 +22,7 @@ public class SampleView extends HorizontalSplitPanel implements View {
 	public SampleView(String templateName){
 		setSecondComponent(createMarkupView(templateName));
 		setSplitPosition(40, Unit.PERCENTAGE);
+		setSizeFull();
 	}
 
 	private Component createMarkupView(String templateName){
@@ -30,6 +31,7 @@ public class SampleView extends HorizontalSplitPanel implements View {
 		editor.setSizeFull();
 		editor.setMode(AceMode.html);
 		editor.setShowPrintMargin(false);
+		editor.setReadOnly(true);
 		return editor;
 	}
 

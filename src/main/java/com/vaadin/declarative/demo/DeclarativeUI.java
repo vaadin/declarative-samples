@@ -12,7 +12,7 @@ import com.vaadin.ui.*;
 import javax.servlet.annotation.WebServlet;
 
 /**
- *
+ * Main UI for the declarative samples.
  */
 @Theme("mytheme")
 @Widgetset("com.vaadin.declarative.demo.MyAppWidgetset")

@@ -6,6 +6,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.declarative.Design;
 
 /**
+ * Sample design that contains grid
  * Created by Vaadin Ltd / mjhosio on 30/03/15.
  */
 @DesignRoot

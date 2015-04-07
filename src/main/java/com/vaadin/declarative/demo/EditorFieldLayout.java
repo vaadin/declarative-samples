@@ -7,6 +7,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.declarative.Design;
 
 /**
+ * Editor field that is used in NestedDesignsLayout
  * Created by Vaadin Ltd / mjhosio on 30/03/15.
  */
 @DesignRoot

@@ -6,6 +6,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.declarative.Design;
 
 /**
+ * Design that uses spreadsheet
  * Created by Vaadin Ltd / mjhosio on 30/03/15.
  */
 @DesignRoot

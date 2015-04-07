@@ -4,6 +4,7 @@ import com.vaadin.data.Item;
 import com.vaadin.data.util.IndexedContainer;
 
 /**
+ * View for the grid sample
  * Created by Vaadin Ltd / mjhosio on 30/03/15.
  */
 public class GridSampleView extends SampleView{

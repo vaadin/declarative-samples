@@ -5,6 +5,7 @@ import com.vaadin.data.util.IndexedContainer;
 import com.vaadin.ui.Button;
 
 /**
+ * View for the NestedDesignsLayout
  * Created by Vaadin Ltd / mjhosio on 30/03/15.
  */
 public class NestedDesignsView extends SampleView{
@@ -25,9 +26,19 @@ public class NestedDesignsView extends SampleView{
 			@Override
 			public void buttonClick(Button.ClickEvent event) {
 				Object id=container.addItem();
-				container.getItem(id).getItemProperty("Item").setValue(layout.editor.itemField.getValue());
+				Item item=container.getItem(id);
+				item.getItemProperty("Item").setValue(layout.editor.itemField.getValue());
+				item.getItemProperty("Quantity").setValue(Integer.parseInt(layout.editor.quantityField.getValue()));
+				item.getItemProperty("Price").setValue(Double.parseDouble(layout.editor.priceField.getValue()));
+				clearEditor();
 			}
 		});
+	}
+
+	private void clearEditor(){
+		layout.editor.itemField.setValue("");
+		layout.editor.quantityField.setValue("");
+		layout.editor.priceField.setValue("");
 	}
 
 
