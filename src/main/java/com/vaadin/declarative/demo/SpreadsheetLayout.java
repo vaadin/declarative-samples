@@ -12,7 +12,7 @@ import com.vaadin.ui.declarative.Design;
 @DesignRoot
 public class SpreadsheetLayout extends VerticalLayout{
 
-	public Spreadsheet spreadsheet;
+	protected Spreadsheet spreadsheet;
 
 	public SpreadsheetLayout(){
 		Design.read(this);

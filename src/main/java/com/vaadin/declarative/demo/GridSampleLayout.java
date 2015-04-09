@@ -12,7 +12,7 @@ import com.vaadin.ui.declarative.Design;
 @DesignRoot
 public class GridSampleLayout extends VerticalLayout{
 
-	public Grid grid;
+	protected Grid grid;
 
 	public GridSampleLayout(){
 		Design.read(this);

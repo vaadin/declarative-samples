@@ -13,12 +13,12 @@ import com.vaadin.ui.declarative.Design;
 @DesignRoot
 public class EditorFieldLayout extends VerticalLayout {
 
-	public TextField itemField;
-	public TextField quantityField;
-	public TextField priceField;
+	protected TextField itemField;
+	protected TextField quantityField;
+	protected TextField priceField;
 
-	public Button cancelButton;
-	public Button saveButton;
+	protected Button cancelButton;
+	protected Button saveButton;
 
 	public EditorFieldLayout(){
 		Design.read(this);

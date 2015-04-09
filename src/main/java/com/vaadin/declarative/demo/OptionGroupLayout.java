@@ -12,7 +12,7 @@ import com.vaadin.ui.declarative.Design;
 @DesignRoot
 public class OptionGroupLayout extends VerticalLayout{
 
-	public OptionGroup options;
+	protected OptionGroup options;
 
 	public OptionGroupLayout(){
 		Design.read(this);

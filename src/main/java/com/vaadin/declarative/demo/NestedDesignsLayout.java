@@ -12,8 +12,8 @@ import com.vaadin.ui.declarative.Design;
 @DesignRoot
 public class NestedDesignsLayout extends VerticalLayout{
 
-	public EditorFieldLayout editor;
-	public Grid grid;
+	protected EditorFieldLayout editor;
+	protected Grid grid;
 
 	public NestedDesignsLayout(){
 		Design.read(this);
