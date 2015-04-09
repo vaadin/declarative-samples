@@ -58,9 +58,9 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.vaadin.addon</groupId>
-			<artifactId>vaadin-spreadsheet</artifactId>
-			<version>1.0.0</version>
+			<groupId>org.vaadin.addon</groupId>
+			<artifactId>v-ol3</artifactId>
+			<version>0.1.4</version>
 		</dependency>
 
 		<!--

@@ -6,5 +6,7 @@
 
     <inherits name="org.vaadin.aceeditor.AceEditorWidgetSet" />
 
-    <inherits name="com.vaadin.addon.spreadsheet.Widgetset" />
+    
+
+    <inherits name="org.vaadin.addon.vol3.WidgetSet" />
 </module>

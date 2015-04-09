@@ -41,7 +41,7 @@ public class DeclarativeUI extends UI {
         addView("LoginForm", LoginViewWithListeners.class);
         addView("Options", OptionGroupView.class);
         addView("Grid", GridSampleView.class);
-        addView("Spreadsheet", SpreadsheetView.class);
+        addView("Map", MapView.class);
         addView("Nested", NestedDesignsView.class);
         // navigate to initial page
         getNavigator().navigateTo("Start");
