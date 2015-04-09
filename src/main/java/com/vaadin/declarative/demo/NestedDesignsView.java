@@ -20,16 +20,30 @@ public class NestedDesignsView extends SampleView{
 		this.setFirstComponent(layout);
 		initData();
 		initSaveListener();
+		initCancelListener();
 		VerticalLayout editors=new VerticalLayout();
 		editors.setSpacing(true);
 		editors.setSizeFull();
 		Component rootEditor=createMarkupView("NestedDesignsLayout.html");
-		rootEditor.setCaption("Root design");
+		rootEditor.setCaption("Root design (NestedDesignsLayout.html)");
 		editors.addComponent(rootEditor);
 		Component nestedEditor = createMarkupView("EditorFieldLayout.html");
-		nestedEditor.setCaption("Nested design");
+		nestedEditor.setCaption("Nested design (EditorFieldLayout.html)");
 		editors.addComponent(nestedEditor);
 		setSecondComponent(editors);
+		setSplitPosition(38, Unit.PERCENTAGE);
+
+	}
+
+	private void initCancelListener() {
+		layout.editor.cancelButton.addClickListener(new Button.ClickListener() {
+			@Override
+			public void buttonClick(Button.ClickEvent event) {
+				layout.editor.itemField.setValue("");
+				layout.editor.quantityField.setValue("");
+				layout.editor.priceField.setValue("");
+			}
+		});
 	}
 
 	private void initSaveListener() {

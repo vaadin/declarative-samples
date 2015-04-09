@@ -25,7 +25,7 @@ public class SampleView extends HorizontalSplitPanel implements View {
 
 	public SampleView(String templateName){
 		setSecondComponent(createMarkupView(templateName));
-		setSplitPosition(40, Unit.PERCENTAGE);
+		setSplitPosition(38, Unit.PERCENTAGE);
 		setSizeFull();
 	}
 
